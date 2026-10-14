@@ -11,109 +11,174 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Project-Exploratory%20Data%20Analysis-blue" alt="Project">
-  <img src="https://img.shields.io/badge/Python-Data%20Analysis-yellow" alt="Python">
-  <img src="https://img.shields.io/badge/Google%20Colab-Notebook-orange" alt="Google Colab">
-  <img src="https://img.shields.io/badge/Status-Completed-brightgreen" alt="Status">
+  <img src="https://img.shields.io/badge/Python-Data%20Analysis-yellow?style=for-the-badge&logo=python&logoColor=black" alt="Python">
+  <img src="https://img.shields.io/badge/Google%20Colab-Notebook-orange?style=for-the-badge&logo=googlecolab&logoColor=white" alt="Google Colab">
+  <img src="https://img.shields.io/badge/Analysis-EDA-blue?style=for-the-badge" alt="Exploratory Data Analysis">
 </p>
 
 ---
 
 ## 📌 Project Overview
 
-The **FedEx Logistics Operations Analysis** project explores supply chain and shipment data to understand logistics performance, freight costs, shipment modes, destination-country patterns, vendor contributions, manufacturing-site activity, and data quality.
+**FedEx Logistics Operations Analysis** is an exploratory data analysis project focused on identifying patterns in logistics and supply chain operations.
 
-Using **Python in Google Colab**, this project applies exploratory data analysis (EDA), statistical summaries, and visualizations to uncover patterns and generate actionable insights for logistics and supply chain decision-making.
+The project examines shipment volumes, destination countries, shipment modes, vendor contributions, manufacturing sites, freight costs, shipment weights, correlations, and data quality. Using Python and Google Colab, the analysis transforms raw supply chain data into visual insights that can support logistics reporting and operational decision-making.
 
-## 🎯 Objectives
+## 🎯 Project Objectives
 
 - Analyze shipment volumes across destination countries.
-- Compare shipment activity by shipment mode.
+- Compare shipment distributions by transportation mode.
 - Identify leading vendors and manufacturing sites by shipment count.
 - Examine freight-cost and shipment-weight distributions.
-- Investigate relationships between shipment weight and freight cost.
-- Compare average freight costs across destination countries and shipment modes.
-- Explore correlations among key logistics variables.
-- Assess missing values and summarize numerical features.
+- Investigate the relationship between shipment weight and freight cost.
+- Compare destination countries by average freight cost and shipment count.
+- Explore correlations among key numerical logistics variables.
+- Identify missing values and summarize numerical features.
 
 ## 🧰 Tools & Technologies
 
-- **Python**
-- **Google Colab**
-- **Pandas** — data manipulation and analysis
-- **NumPy** — numerical computing
-- **Matplotlib** — plotting
-- **Seaborn** — statistical visualization
-- **Plotly** — interactive visualization
-
-## 📊 Visualizations
-
-The following visualizations are included in this repository. The image paths below assume the images are stored in a folder named `visualizations/` in the repository root. If you keep them in the root directory, remove `visualizations/` from each image path.
-
-### Shipment Destinations & Operations
-
-| Visualization | Preview |
+| Technology | Application |
 |---|---|
-| Top 10 Destination Countries by Shipments | ![Top 10 Destination Countries by Shipments](visualizations/01-top-10-destination-countries-by-shipments.png) |
-| Shipment Distribution by Mode | ![Shipment Distribution by Mode](visualizations/02-shipment-distribution-by-mode.png) |
-| Top 10 Vendors by Shipments | ![Top 10 Vendors by Shipments](visualizations/03-top-10-vendors-by-shipments.png) |
-| Top 10 Manufacturing Sites by Shipments | ![Top 10 Manufacturing Sites by Shipments](visualizations/04-top-10-manufacturing-sites-by-shipments.png) |
-| Top 10 Destination Countries by Average Freight Cost | ![Top 10 Destination Countries by Average Freight Cost](visualizations/09-top-10-destination-countries-by-average-freight-cost.png) |
-| Top 15 Destination Countries by Shipment Count | ![Top 15 Destination Countries by Shipment Count](visualizations/10-top-15-destination-countries-by-shipment-count.png) |
+| Python | Data analysis and programming |
+| Google Colab | Notebook development and execution |
+| Pandas | Data manipulation and cleaning |
+| NumPy | Numerical computations |
+| Matplotlib | Data visualization |
+| Seaborn | Statistical visualization |
+| Plotly | Interactive charts |
 
-### Freight Costs & Shipment Weight
+---
 
-| Visualization | Preview |
-|---|---|
-| Freight Cost Distribution (USD) | ![Freight Cost Distribution USD](visualizations/05-freight-cost-distribution-usd.png) |
-| Shipment Weight Distribution (kg) | ![Shipment Weight Distribution kg](visualizations/06-shipment-weight-distribution-kg.png) |
-| Freight Cost by Shipment Mode | ![Freight Cost by Shipment Mode](visualizations/07-freight-cost-by-shipment-mode.png) |
-| Shipment Weight vs. Freight Cost | ![Shipment Weight vs Freight Cost](visualizations/08-shipment-weight-vs-freight-cost.png) |
-| Shipment Weight Distribution by Mode | ![Shipment Weight Distribution by Mode](visualizations/11-shipment-weight-distribution-by-mode.png) |
-| Shipment Weight vs. Freight Cost Analysis | ![Shipment Weight vs Freight Cost Analysis](visualizations/12-shipment-weight-vs-freight-cost-analysis.png) |
+## 📊 Visualizations Gallery
 
-### Statistical & Data Quality Analysis
+All project visualization images and the FedEx logo are stored in the `preview/` directory.
 
-| Visualization | Preview |
-|---|---|
-| Shipment Mode Distribution | ![Shipment Mode Distribution](visualizations/13-shipment-mode-distribution.png) |
-| Correlation Heatmap of Logistics Variables | ![Correlation Heatmap of Logistics Variables](visualizations/14-correlation-heatmap-logistics-variables.png) |
-| Pair Plot of Logistics Variables | ![Pair Plot of Logistics Variables](visualizations/15-pair-plot-logistics-variables.png) |
-| Missing Values by Feature | ![Missing Values by Feature](visualizations/16-missing-values-by-feature.png) |
-| Statistical Summary — Numerical Features | ![Statistical Summary Numerical Features](visualizations/17-statistical-summary-numerical-features.png) |
+### 1. Shipment Destinations & Operations
 
-## 🔎 Analysis Workflow
+<details>
+<summary><strong>Explore shipment destinations, vendors and manufacturing sites</strong></summary>
 
-1. Load the supply chain dataset into Google Colab.
-2. Inspect dataset dimensions, column names, data types, and sample records.
-3. Assess data quality, including missing values and duplicate records.
-4. Prepare relevant numerical and categorical features for analysis.
-5. Perform descriptive statistical analysis.
-6. Explore shipment, vendor, destination, manufacturing-site, freight-cost, and weight patterns.
-7. Create visualizations to communicate findings.
-8. Summarize business implications and potential areas for operational improvement.
+**01. Top 10 Destination Countries by Number of Shipments**
 
-## 💡 Business Value
+![Top 10 Destination Countries](preview/01-top-10-destination-countries-by-shipments.png)
 
-The analysis can help logistics stakeholders explore:
+**02. Distribution of Shipments by Shipment Mode**
 
-- Shipment concentration by destination and mode.
-- Freight-cost variation across shipment modes and destinations.
+![Shipment Distribution by Mode](preview/02-shipment-distribution-by-mode.png)
+
+**03. Top 10 Vendors by Number of Shipments**
+
+![Top 10 Vendors](preview/03-top-10-vendors-by-shipments.png)
+
+**04. Top 10 Manufacturing Sites by Number of Shipments**
+
+![Top 10 Manufacturing Sites](preview/04-top-10-manufacturing-sites-by-shipments.png)
+
+**09. Top 10 Destination Countries by Average Freight Cost**
+
+![Average Freight Cost by Destination](preview/09-top-10-destination-countries-by-average-freight-cost.png)
+
+**10. Top 15 Destination Countries by Shipment Count**
+
+![Destination Countries by Shipment Count](preview/10-top-15-destination-countries-by-shipment-count.png)
+
+</details>
+
+### 2. Freight Costs & Shipment Weight
+
+<details>
+<summary><strong>Explore freight costs, shipment weights and transportation patterns</strong></summary>
+
+**05. Distribution of Freight Cost (USD)**
+
+![Freight Cost Distribution](preview/05-freight-cost-distribution-usd.png)
+
+**06. Distribution of Shipment Weight (kg)**
+
+![Shipment Weight Distribution](preview/06-shipment-weight-distribution-kg.png)
+
+**07. Freight Cost Distribution by Shipment Mode**
+
+![Freight Cost by Shipment Mode](preview/07-freight-cost-by-shipment-mode.png)
+
+**08. Shipment Weight vs. Freight Cost**
+
+![Shipment Weight vs Freight Cost](preview/08-shipment-weight-vs-freight-cost.png)
+
+**11. Shipment Weight Distribution by Shipment Mode**
+
+![Shipment Weight Distribution by Mode](preview/11-shipment-weight-distribution-by-mode.png)
+
+**12. Shipment Weight vs. Freight Cost Analysis**
+
+![Shipment Weight vs Freight Cost Analysis](preview/12-shipment-weight-vs-freight-cost-analysis.png)
+
+</details>
+
+### 3. Statistical Analysis & Data Quality
+
+<details>
+<summary><strong>Explore statistical relationships and dataset quality</strong></summary>
+
+**13. Shipment Mode Distribution**
+
+![Shipment Mode Distribution](preview/13-shipment-mode-distribution.png)
+
+**14. Correlation Heatmap of Key Logistics Variables**
+
+![Correlation Heatmap](preview/14-correlation-heatmap-logistics-variables.png)
+
+**15. Pair Plot of Logistics Variables**
+
+![Pair Plot](preview/15-pair-plot-logistics-variables.png)
+
+**16. Missing Values by Feature**
+
+![Missing Values by Feature](preview/16-missing-values-by-feature.png)
+
+**17. Statistical Summary — Numerical Features**
+
+![Statistical Summary](preview/17-statistical-summary-numerical-features.png)
+
+</details>
+
+---
+
+## 🔎 Analytical Workflow
+
+1. **Data loading:** Load the supply chain dataset into Google Colab.
+2. **Data inspection:** Examine dataset dimensions, column names, data types and sample records.
+3. **Data-quality assessment:** Review missing values, duplicates and potential inconsistencies.
+4. **Data preparation:** Identify relevant numerical and categorical features.
+5. **Descriptive statistics:** Summarize numerical features and distributions.
+6. **Exploratory analysis:** Investigate shipment modes, destinations, vendors, manufacturing sites, freight costs and weights.
+7. **Visualization:** Create charts to communicate patterns and relationships.
+8. **Interpretation:** Review the analytical results and identify potential operational insights.
+
+## 💡 Business Applications
+
+The analysis provides a foundation for investigating:
+
+- Shipment concentration across destination countries.
+- Differences in shipment activity across transportation modes.
+- Freight-cost variation across destinations and modes.
 - Relationships between shipment weight and freight cost.
-- Vendor and manufacturing-site shipment contributions.
-- Data-quality gaps that may affect reporting and operational analysis.
+- Shipment contributions from vendors and manufacturing sites.
+- Missing data that may affect reporting and analytical reliability.
 
-*These are analytical areas explored by the project; any business conclusions should be based on the results observed in the notebook.*
+*Business conclusions should be based on the actual metrics and findings produced by the notebook.*
 
 ## 📁 Repository Structure
 
 ```text
 Fed-ex/
+│
 ├── README.md
-├── FedEx_Logistics_Operations_Analysis.ipynb
-├── Fed-ex-logo.png
+├── Sample_EDA_Submission_Template.ipynb
 ├── requirements.txt
-└── visualizations/
+│
+└── preview/
+    ├── Fed-ex-logo.png
     ├── 01-top-10-destination-countries-by-shipments.png
     ├── 02-shipment-distribution-by-mode.png
     ├── 03-top-10-vendors-by-shipments.png
@@ -133,18 +198,19 @@ Fed-ex/
     └── 17-statistical-summary-numerical-features.png
 ```
 
-> **Important:** GitHub image links are case-sensitive. Keep the filenames and folder names in this README exactly aligned with the files you upload. If your current image names differ, rename the files or update the paths above.
+**Important:** The image names in this structure must match the actual uploaded files exactly, including capitalization and file extensions. If your logo has a different filename, update its image path accordingly.
 
-## ▶️ Run the Notebook
+## ▶️ How to Run the Notebook
 
-1. Open the notebook file in GitHub.
-2. Select **Open in Colab** if you have configured the notebook with a Colab badge/link, or upload the `.ipynb` file to [Google Colab](https://colab.research.google.com/).
+1. Open `Sample_EDA_Submission_Template.ipynb` in your GitHub repository.
+2. Open [Google Colab](https://colab.research.google.com/) and upload the notebook if needed.
 3. Upload or mount the dataset required by the notebook.
-4. Run the cells in order.
+4. Check that dataset paths in the notebook match your files.
+5. Run the notebook cells in sequence.
 
 ## 📦 Requirements
 
-Create a `requirements.txt` containing the libraries used by the notebook:
+For a local Python environment, use the following `requirements.txt`:
 
 ```text
 pandas
@@ -154,31 +220,33 @@ seaborn
 plotly
 ```
 
-Google Colab already includes many common data-analysis packages. Install any missing package with `pip` inside the notebook.
+Google Colab already includes many common data-analysis libraries. Install any missing dependencies before running the notebook.
 
 ## 👤 Project Information
 
-- **Project:** FedEx Logistics Operations Analysis
-- **Project Type:** Individual Project
-- **Domain:** Logistics & Supply Chain Analytics
-- **Notebook Environment:** Google Colab
-- **Author:** Ayush Dash
+| Field | Details |
+|---|---|
+| Project Name | FedEx Logistics Operations Analysis |
+| Project Type | Individual Project |
+| Domain | Logistics & Supply Chain Analytics |
+| Development Environment | Google Colab |
+| Author | Ayush Dash |
 
-## 🚀 Future Improvements
+## 🚀 Future Enhancements
 
-- Add a reproducible data-cleaning pipeline.
-- Include validated KPI calculations and a concise findings section.
-- Compare shipment modes and destinations using appropriate statistical tests.
-- Add interactive Plotly charts where they improve exploration.
-- Develop a dashboard for monitoring logistics KPIs over time, if the dataset includes suitable date fields.
+- Document key findings using validated metrics from the analysis.
+- Improve reproducibility through a structured data-cleaning workflow.
+- Apply suitable statistical tests when the data supports them.
+- Extend interactive visualizations where they add analytical value.
+- Develop a logistics KPI dashboard if the available data supports it.
 
 ## 📄 License
 
-Add a license file if you want to define how others may use, modify, and distribute this project. If you choose the MIT License, include the full license text in a `LICENSE` file.
+A license has not yet been specified. Add a `LICENSE` file if you intend to define how others may use, modify or distribute this project.
 
 ---
 
 <p align="center">
   <strong>FedEx Logistics Operations Analysis</strong><br>
-  Exploratory Data Analysis for Supply Chain Insights
+  <sub>Exploratory Data Analysis for Supply Chain Insights</sub>
 </p>
