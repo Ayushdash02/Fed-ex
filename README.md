@@ -130,7 +130,7 @@ The following gallery contains the project's visual outputs. Each image is linke
 
 #### 17. Statistical Summary — Numerical Features
 
-![Statistical Summary Numerical Features](preview/17-statistical-summary-numerical-features.png)
+![Statistical Summary Numerical Features](preview/17-statistical-summary-numerical-features.jpg)
 
 ---
 
