@@ -3,7 +3,7 @@
 ### Exploratory Data Analysis (EDA) | Logistics & Supply Chain Analytics
 
 <p align="center">
-  <img src="Fed-ex-logo.png" alt="FedEx Logo" width="240">
+  <img src="preview/Fed-ex-logo.png" alt="FedEx Logo" width="240">
 </p>
 
 <p align="center">
